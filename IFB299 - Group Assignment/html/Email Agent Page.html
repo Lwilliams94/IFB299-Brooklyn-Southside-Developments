@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Email Agent</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="..">
+
+<body>
+<script src="week6.js"></script>
+<form name="myForm" action="" onsubmit="return validate(this)" method="post">    
+
+
+<legend>Email Agent</legend>
+<p>* required fields</p>
+
+<input type='hidden' name='submitted' id='submitted' value='1'/><br>
+<label for='name' >Name*: </label>
+<input type='text' name='name' id='name' maxlength="50" required><br>
+<label for='email' >Email Address*:</label>
+<input type='text' name='email' id='email' maxlength="50"required><br>
+<label for='email' >Phone*:</label>
+<input type='text' name='phone' id='phone' maxlength="10"required><br>
+
+
+     About me:<br>
+    
+    <select name="user_type" required>
+    <option value="">Please choose an option</option>
+      <option value="ownhome">I own my own home</option>
+      <option value="renting">I am renting</option>
+      <option value="sold">I have recently sold</option>
+	  <option value="firsthome">I am a first home buyer</option>
+	  <option value="invest">I am looking to invest</option>
+	  <option value="monitor">I am monitoring the market</option>
+    </select><br>
+
+	
+	I would like to:
+ <br>
+
+	<input type="checkbox" name="Get an indication of price" value="Get an indication of price" >Get an indication of price<br>
+	<input type="checkbox" name="Obtain the contract of sale" value="Obtain the contract of sale" >Obtain the contract of sale<br>
+	<input type="checkbox" name="Inspect the property" value="Inspect the property" >Inspect the property <br>
+	<input type="checkbox" name="Be contacted about similar properties" value="Be contacted about similar properties" >Be contacted about similar properties <br>
+<br><br>
+
+<input type='submit' name='Submit' value='Submit' />
+
+
+</form>
+    <br>
+    
+    
+   
+  </div>
+</body>
+
+</html>
